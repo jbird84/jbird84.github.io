@@ -5,5 +5,5 @@ import SplashPublishPlugin
 
 
 // This will generate your website using the built-in Foundation theme:
-try MyPublishSite().publish(withTheme: .myPublishSite, additionalSteps: [.deploy(using: .gitHub("jbird84/j", useSSH: false))],
-                            plugins: [.splash(withClassPrefix: "")])
+try MyPublishSite().publish(withTheme: .myPublishSite, deployedUsing:.gitHub("jbird84/jbird84.github.io", useSSH: false),
+    plugins: [.splash(withClassPrefix: "")])
